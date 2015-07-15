@@ -4,6 +4,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
 import com.zcoo.servlet.AppServlet;
+import com.zcoo.servlet.MainServlet;
 
 public class ServlertConfig {
 
@@ -15,6 +16,7 @@ public class ServlertConfig {
 //        handler.addServlet(new ServletHolder(new DetailServlet()), "/detail");
 //        handler.addServlet(new ServletHolder(new HomeServlet()), "/home");
         handler.addServlet(new ServletHolder(new AppServlet()), "/app");
+        handler.addServlet(new ServletHolder(new MainServlet()), "/main");
 //        handler.addServlet(new ServletHolder(new GameServlet()), "/game");
 //        handler.addServlet(new ServletHolder(new DownloadServlet()), "/download");
 //        handler.addServlet(new ServletHolder(new UserServlet()), "/user");
